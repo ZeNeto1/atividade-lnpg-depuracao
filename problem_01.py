@@ -13,15 +13,12 @@ def get_numbers():
   numbers = input("Enter numbers separated by spaces: ").split()
   try:
     numbers = [float(num) for num in numbers] 
-    '''o código não funcionava se o usuário inserir números 
-    decimais, então foi usado o float para converter os números em float.'''
+    #o código não funcionava se o usuário inserir números decimais, então foi usado o float para converter os números em float.
     return numbers
     
   except ValueError:
     print("Entrada inválida. Por favor, insira apenas números separados por espaços.")
-    '''foi utilizado um tratamento de exceção para 
-    garantir que o programa identifique se o usuário 
-    inserir um valor inválido como Strings ou Caracteres'''
+    #foi utilizado um tratamento de exceção para garantir que o programa identifique se o usuário inserir um valor inválido como Strings ou Caracteres'''
 
 
 def main():
